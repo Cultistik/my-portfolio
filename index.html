@@ -27,4 +27,111 @@
             margin-top: 10px;
         }
         nav a {
-            color: #D3
+            color: #D3C6AA;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .about-me, .portfolio, .contact {
+            margin-bottom: 60px;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #E8D5B7;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .portfolio img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            margin-right: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1C1C1C;
+            color: #C7ADA1;
+        }
+        input, textarea {
+            background-color: #333333;
+            color: #D3C6AA;
+            border: 1px solid #555555;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            width: auto;
+            background-color: #555555;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #777777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Haunted Cocoa</h1>
+    <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about-me" class="about-me">
+    <h2>About Me</h2>
+    <p>
+        Haunted Cocoa is an artist specializing in unique, thought-provoking artwork inspired by the dark academia aesthetic.
+        Passionate about creating pieces that challenge perception and inspire deeper reflection, Haunted Cocoa uses a variety of mediums to express complex emotions and narratives.
+    </p>
+</section>
+
+<section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <p>Explore some of my latest work below:</p>
+    <div>
+        <!-- Add images of your work here -->
+        <img src="your-image-1.jpg" alt="Artwork 1">
+        <img src="your-image-2.jpg" alt="Artwork 2">
+        <img src="your-image-3.jpg" alt="Artwork 3">
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Haunted Cocoa | All rights reserved.</p>
+</footer>
+
+</body>
+</html>
